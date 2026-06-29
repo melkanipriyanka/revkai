@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVKAI | Automated Merchant Reputation & Data Governance Dashboard</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #2c3e50; max-width: 750px; margin: 0 auto; padding: 30px 15px; background-color: #f8f9fa; }
+        .card { background: white; padding: 35px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; margin-bottom: 40px; }
+        h1 { font-size: 2.2rem; color: #1a252f; margin-bottom: 5px; }
+        .subtitle { color: #7f8c8d; font-size: 1.1rem; margin-top: 0; margin-bottom: 25px; }
+        .btn { display: inline-block; background: #0066cc; color: white; border: none; padding: 15px 35px; font-size: 16px; font-weight: bold; border-radius: 8px; cursor: pointer; width: 85%; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: background 0.2s; }
+        .btn:hover { background: #0052a3; }
+        .legal-section { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: justify; margin-top: 30px; }
+        h2 { font-size: 1.25rem; color: #2980b9; margin-top: 30px; border-left: 4px solid #3498db; padding-left: 10px; }
+        p, li { font-size: 14px; color: #34495e; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 6px; }
+        footer { margin-top: 40px; text-align: center; font-size: 12px; color: #95a5a6; border-top: 1px solid #ecf0f1; padding-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. AUTOMATED MULTI-MERCHANT INTERFACE CARD -->
+    <div class="card">
+        <h1 id="merchant-name-header">REVKAI Dashboard</h1>
+        <p id="merchant-sub-header" class="subtitle">Intelligent Feedback Management for Verified Local Establishments</p>
+        
+        <!-- The Zero-Click Anti-Spam Button Configuration -->
+        <button onclick="handleLazyCustomerAction()" class="btn">
+            🚀 Copy Unique Review & Open Google Maps
+        </button>
+    </div>
+
+    <!-- 2. MANDATORY PRIVACY POLICY & REVERSED REFUND MATRIX -->
+    <div class="legal-section">
+        <h1 style="font-size: 1.6rem; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px;">Data Privacy Policy & Platform Compliance Charter</h1>
+        <p><strong>Last Updated: June 2026</strong></p>
+        <p>Welcome to REVKAI ("the Platform", "we", "us", "our"), operating via <strong>https://revkai.in</strong>. This comprehensive governance document details our strict protocols regarding data collection, processing boundaries, security mechanics, and compliance mandates required by global platform verification authorities, including the Google API Verification Desk, Meta Developer Audits, and Razorpay Merchant Pre-Verification frameworks.</p>
+
+        <h2>1. GOOGLE API SERVICES USER DATA & LIMITED USE COMPLIANCE</h2>
+        <p>REVKAI integrates seamlessly with the official Google Business Profile API to provide reputation overview dashboards for registered local retail merchants. Our data usage practices strictly adhere to the Google API Services User Data Policy:</p>
+        <ul>
+            <li><strong>Scope Limitation:</strong> We exclusively request read/write scopes strictly necessary to display public business review metadata, view aggregate star-rating configurations, and execute contextual templated responses directly back to the merchant’s Google Business profile.</li>
+            <li><strong>Limited Use Enforcement:</strong> REVKAI's use and transfer of information received from Google APIs to any other app will adhere to <a href="https://google.com" target="_blank" style="color: #2980b9; text-decoration: none;">Google API Services User Data Policy's Limited Use requirements</a>, including the Restricted Scopes rules. We do NOT access personal Gmail mailboxes, private Google Drive files, or user contact directories.</li>
+            <li><strong>Data Transfer Ban:</strong> We strictly do NOT sell, lease, trade, or transfer any review metadata or user insights derived from Google APIs to third-party advertising networks, data brokers, tracking agencies, or external consumer profiling databases.</li>
+        </ul>
+
+        <h2>2. META DEVELOPER PLATFORM & WHATSAPP CLOUD API GOVERNANCE</h2>
+        <p>For verified merchants utilizing our communication modules, REVKAI accesses the official Meta WhatsApp Cloud API infrastructure layers under the following data segregation guarantees:</p>
+        <ul>
+            <li><strong>Data Scoping:</strong> We request access strictly to dispatch transactional, automated utility notification alerts directly to the merchant's designated corporate smartphone number when local review threshold variations occur.</li>
+            <li><strong>Zero Scraping Guarantee:</strong> The Platform does not read, intercept, store, or log any personal chat streams, contact databases, call logs, media files, or device telemetry from the merchant's or consumer's hardware. All data is completely sandboxed.</li>
+        </ul>
+
+        <h2>3. RAZORPAY COMPLIANCE & FINANCIAL TRANSACTION SECURITY</h2>
+        <p>All monetization models, workspace license subscriptions, and processing fees on REVKAI are managed exclusively through official, fully encrypted token gates powered by Razorpay payment gateway integration layers:</p>
+        <ul>
+            <li><strong>Cardholder Data Exclusions:</strong> REVKAI infrastructure operates entirely outside the scope of cardholder data storage. We do NOT collect, intercept, log, or store sensitive financial passwords, net-banking credentials, CVV codes, or full credit/debit card numbers.</li>
+            <li><strong>Tokenized Validation:</strong> All transaction records processed on our dashboards rely solely on highly secure, encrypted webhooks and transaction tokens returned by Razorpay to verify active subscription fulfillment.</li>
+        </ul>
+
+        <h2>4. OFFICIAL CANCELLATION & 7-DAY REFUND POLICY</h2>
+        <p>We are committed to absolute transparency regarding subscription fulfillment and digital license purchasing. Our commercial cancellation policy runs under these strict operational metrics:</p>
+        <ul>
+            <li><strong>7-Day Trial Window:</strong> Newly onboarded merchants are entitled to a full, unconditional refund window lasting exactly seven (7) calendar days from the date of the initial digital account activation.</li>
+            <li><strong>Processing Channel:</strong> Refund requests submitted within the active 7-day milestone are routed directly to our accounting layers and credited automatically back to the customer's original payment source (UPI, Card, Net Banking) via our Razorpay clearing channel within 5-7 working days.</li>
+            <li><strong>Exclusions:</strong> Refund claims executed after the 7-day operational boundary loop are non-refundable, and active subscription access parameters continue unhindered until the natural end of the respective monthly billing phase.</li>
+        </ul>
+
+        <h2>5. DYNAMIC SYSTEM PERMUTATION & ZERO DATA HARVESTING</h2>
+        <p>Our background text shuffling engine runs on an isolated client-side browser architecture structure. REVKAI does not harvest, log, or compile individual consumer clipboard data or build shadow tracking profiles. The generation of text combinations serves solely to assist the merchant with high-speed response workflows under natural patterns.</p>
+
+        <h2>6. USER RIGHTS, REVOCATION, AND DATA CLEARANCE</h2>
+        <p>Every authenticated merchant retains complete and absolute sovereignty over their data pipelines. You can instantly revoke REVKAI's API connections at any moment via your secure Google Account Settings or your Meta Integration Dashboard. To request immediate permanent deletion of your local platform account and database records, contact our dedicated compliance desk directly at: <strong>admin@revkai.in</strong>. All verified removal requests are processed within 24 business hours.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 REVKAI Workspace. All rights reserved.</p>
+        <p>Domain: https://revkai.in | Compliance Core: admin@revkai.in</p>
+    </footer>
+
+    <!-- 3. INTERACTIVE SHUFFLER & MERCHANT ROUTING JAVASCRIPT LAYER -->
+    <script>
+        // Multi-Industry Permutation Database
+        const merchantDatabase = {
+            "default": {
+                name: "Verified REVKAI Merchant",
+                googleUrl: "https://google.com",
+                starts: ["Excellent experience to start with!", "Incredibly clean layout right from the entry.", "Great setup with a very welcoming vibe at the desk."],
+                middles: ["The staff service and environment management are elite.", "Everything is top-notch and perfectly maintained here.", "Spacious layouts with excellent ventilation parameters."],
+                ends: ["Highly recommend to everyone nearby!", "Total value for money subscription. 5 stars!", "The best local facility across all standards."]
+            },
+            "GYM982": {
+                name: "Iron Paradise Fitness, Dehradun",
+                googleUrl: "https://google.com", // Replace later with direct Google review link
+                starts: ["High energy atmosphere to start with!", "Incredibly clean and motivating workout floor.", "Great fitness setup with highly welcoming reception staff."],
+                middles: ["The trainer guidance and equipment variety are elite.", "All lifting weights and machines are perfectly maintained.", "Spacious workout floors with top-notch ventilation parameters."],
+                ends: ["Highly recommend to everyone in the local area!", "Total value for money subscription packages. 5 stars!", "The best gym training facility in town across all standards."]
+            }
+        };
+
